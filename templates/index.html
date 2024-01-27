@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV Reader</title>
+</head>
+<body>
+    <h1>Chargeback Transaction Predictor</h1>
+    <form method="post">
+        <label for="csv_data">Provide Transaction Data In CSV (format:: merchant_name,merchant_id,merchant_email,merchant_phone,customer_name,customer_card_number,customer_billing_address,city,zip code,order_date,order_amount,order_currency,order_description,payment_authorization_code,payment_settlement_date,latitude,longitude,ip_address,label):</label>
+        <br>
+        <textarea name="csv_data" rows="5" cols="50" required></textarea>
+        <br>
+        <button type="submit">Is it chargeback transaction?</button>
+    </form>
+
+    {% if data %}
+        <h2>CSV Data:</h2>
+        <table border="1">
+            {% for row in data %}
+                <tr>
+                    {% for value in row %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</body>
+</html>
