@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSV Reader</title>
+    <title>Chargeback Predictor</title>
 </head>
 <body>
     <h1>Chargeback Transaction Predictor</h1>
@@ -15,16 +15,8 @@
     </form>
 
     {% if data %}
-        <h2>CSV Data:</h2>
-        <table border="1">
-            {% for row in data %}
-                <tr>
-                    {% for value in row %}
-                        <td>{{ value }}</td>
-                    {% endfor %}
-                </tr>
-            {% endfor %}
-        </table>
+        <h2>Prediction:</h2>
+        <h3>{{ data }}</h3>
     {% endif %}
 </body>
 </html>
