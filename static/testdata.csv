@@ -1,0 +1,2 @@
+merchant_name,merchant_id,merchant_email,merchant_phone,customer_name,customer_card_number,customer_billing_address,city,zip_code,order_date,order_amount,order_currency,order_description,payment_authorization_code,payment_settlement_date,latitude,longitude,ip_address,target
+TUV Art,432198765,tuv@art.com,+1-800-432-1987,Anna Davis,3530111333300000,6789 Main Street, Atlanta, GA 30303,2021-10-07,55.0,USD,Online purchase of art supplies,R78901,2021-11-19,39.7392,-104.9903,30.12.34.56,0
